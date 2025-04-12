@@ -1,0 +1,194 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+  </head>
+  
+   <style>body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:#E4EFE7;
+  }
+  
+  #navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    padding: 10px;
+    opacity: 1;
+    color: #fff;
+    background-color: #404242;
+  }
+  
+  #navbar header
+   {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    
+  }
+   
+  .nav-link {
+    display: block;
+    margin: 5px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 30px;
+   
+  }
+  
+
+  .nav-link:hover {
+    color: blue;
+
+  }
+  
+  #main-doc {
+    margin-left: 220px;
+    padding: 20px;
+    max-width: 800px;
+   
+  }
+  
+  .main-section  {
+    margin-bottom: 50px;
+    line-height: 28px;
+  }
+  
+  .main-section header {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 768px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  #main-doc {
+    margin-left: 0;
+    padding-top: 20px
+  }
+  }
+</style>
+
+
+  <body>
+    <nav id="navbar">
+      <header>Technical Documentation</header>
+      <a class="nav-link" href="#First_topic">Introduction</a>
+      <a class="nav-link" href="#Second_topic">Science Introduction</a>
+      <a class="nav-link" href="#Third_topic">What is Data?</a>
+      <a class="nav-link" href="#Fourth_topic">Database Table</a>
+      <a class="nav-link" href="#Fifth_topic">Python Libraries</a>
+      <a class="nav-link" href="#Sixth_topic">Python DataFrame</a>
+      
+      </nav>
+      
+      <main id="main-doc">
+            
+            <section id="First_topic" class="main-section" >
+                <header>Introduction</header>
+                <p>Science is a system of knowledge that is concerned with the physical world and its phenomena. Science is a way of learning about what is in the natural world, how it works, and how it got to be the way it is. Science involves unbiased observations and systematic experimentation. Science is motivated by the thrill of discovering or figuring out something new. Science is useful, powerful, and reliable</p>
+            
+            </section>
+
+            <section id="Second_topic" class="main-section">
+            <header>Science Introduction</header>
+            <p>
+                1. Data Science is about data gathering, analysis and decision-making.:</p> 
+                <p>By using Data Science, companies are able to make:</p>
+            <ul>
+                <li>Better decisions (should we choose A or B)</li>
+                <li>Predictive analysis (what will happen next?)</li>
+                <li>Pattern discoveries (find pattern, or maybe hidden information in the data)</li>
+               
+            </ul>
+
+            
+
+            <section id="Third_topic" class="main-section">
+            <header>What is Data?</header>
+                <p>Data is a collection of information.
+
+                    One purpose of Data Science is to structure data, making it interpretable and easy to work with.
+                    
+                    Data can be categorized into two groups:
+                    </p>
+                <ul>
+                    <li>Structured data
+                    </li>
+                    <li>Unstructured data</li>
+                </ul>
+            
+            
+            </section>
+
+            <section id="Fourth_topic" class="main-section">
+            <header>Database Table</header>
+                <p>A database table is a table with structured data.
+
+                    The following table shows a database table with health data extracted from a sports watch:
+                </p>
+                <ul>
+                    <img src="Annotation 2025-03-18 173252.png1.png" alt="">
+                </ul>
+            </section>
+
+            <section id="Fifth_topic" class="main-section">
+                <header>Python Libraries</header>
+                <p>Python has libraries with large collections of mathematical functions and analytical tools.
+
+                    In this tutorial, we will use the following libraries:</p>
+               
+
+                <ul>
+                    <li>Pandas - This library is used for structured data operations, like import CSV files, create dataframes, and data preparation</li>
+                    <li>Numpy - This is a mathematical library. Has a powerful N-dimensional array object, linear algebra, Fourier transform, etc.</li>
+                    <li>Matplotlib - This library is used for visualization of data.</li>
+                    <li>SciPy - This library has linear algebra modules</li>
+                </ul>
+            </section>
+
+            <section id="Sixth_topic" class="main-section">
+                <header>Python DataFrame</header>
+                <h1>Create a DataFrame with Pandas</h1>
+
+                <p>A data frame is a structured representation of data.
+
+                    Let's define a data frame with 3 columns and 5 rows with fictional numbers:</p>
+
+                    <ul>
+                        <img src="Annotation 2025-03-18 174257.png2.png" alt="">
+                    </ul>
+            
+
+                <p>Example Explained</p>
+              
+
+                <li>Import the Pandas library as pd</li>
+                <li>Define data with column and rows in a variable named d</li>
+                <li>Create a data frame using the function pd.DataFrame()</li>
+                <li>The data frame contains 3 columns and 5 rows</li>
+                <li>Print the data frame output with the print() function</li>
+            </section>
+
+
+
+
+    
+        </main>
+
+  </body>
+
+  
+
+</html>

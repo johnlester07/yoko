@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <style>
+   
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+
+  }
+  #about {
+    margin-top: 100px;
+  }
+  body {
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    background-color: #1872c5;
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20231227/pngtree-grid-background-sleek-and-glistening-black-metallic-texture-image_13898497.png");
+  
+ 
+
+  }
+  
+ 
+  #header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #080808;
+    color: white;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  #header-img {
+    height: 60px;
+    margin-right: 1px;
+  }
+  
+  #nav-bar {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-link {
+    color: aqua;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+
+  main {
+    margin-top: 80px; 
+    padding: 20px;
+  }
+  
+  
+  
+ 
+  #form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-top: 100px;
+  }
+  
+  #email {
+    width: 100%;
+    height: 40px; 
+    padding: 10px;
+    color: black;
+    margin: 10px 0;
+    border: 1px solid black;
+  }
+  
+  #submit {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #submit:hover {
+    background-color: #555;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .card {
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 350px;
+  }
+  ul img {
+    width: 300px;
+    height: 200px;
+  }
+  iframe {
+    text-align: center;
+  }
+
+
+  @media (max-width: 768px) {
+    #header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    #nav-bar {
+      margin-top: 10px;
+    }
+  
+    #form {
+      width: 100%;
+    }
+
+  
+  }
+
+    div{
+        color: rgb(255, 255, 255);
+    }
+
+    h2, p{
+         color: aqua;
+    }
+
+
+  </style>
+  <body>
+    <header id="header">
+      <img id="header-img" src="https://img.freepik.com/premium-vector/sport-car-logo-template-premium-vector_555057-160.jpg">
+      <nav id="nav-bar">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#video">Video</a>
+        <a class="nav-link" href="#form">SignUp</a>
+      </nav>
+    </header>
+    <section id="about">
+      <h2>Cars</h2>
+    <p>There are various types of sportscar:</p>
+    <ul>
+        <div class="card"><li><strong>Ferrari:</strong> Ferrari is an Italian company that produces high-performance sports cars, with a history rooted in motorsport, and is known for its iconic racing heritage and luxury performance.</li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCGkh40hmWDayY5TjpO1UwuoCQ-JBApoD2jw&s"><p>₱31,000,000.</p></div>
+       
+        <div class="card"><li><strong>Lexus:</strong> If you're looking to buy a Lexus made in Japan, you can find used models for sale from various Japanese car exporters and dealers, including options like the IS, RX, NX, and GS.</li>
+        <img src="https://car-images.bauersecure.com/wp-images/3550/best_sportscar_514.jpg"><p>PHP 11,218,000.</p></div>
+        <div class="card"><li><strong>Corvette:</strong> The Chevrolet Corvette is a line of American two-door, two-seater sports cars manufactured and marketed by General Motors under the Chevrolet marque since 1953. United States: Flint, Michigan 1953..</li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDb6zOOcfr02EJfAjzeA_0JLK-wzEq7YDW0A&s"><p>₱12,571,888.00.</p></div>
+    </ul>
+    </section>
+    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/N07nQ-uUsww?si=8KATmcuRsQZyFl6S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" name="email" placeholder="Enter Email" required>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>
